@@ -12,7 +12,7 @@ const Projects = ({project}) => {
                 project.map((item)=>(
                     
                     <div key={item.id}>
-                        <div className='  border-2 border-orange-500 relative rounded-2xl p-4 w-full'>
+                        <div className=' transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-blue-600 text-white p-3  border-2 border-orange-500 relative rounded-2xl p-4 w-full'>
                         <img src={item.img} alt="" className='h-full w-full object-cover' />
                             <div className="no absolute top-4 left-4 rounded-4xl bg-amber-400 text-white font-bold px-2 py-1">{item.id}</div>
                             <button  className='px-2 py-2 absolute bottom-5 flex items-center gap-1 text-white font-bold right-5 bg-amber-400 rounded-2xl'><a href="https://github.com/Aakash-Jha-818">View Project</a><MoveRight size={20} /></button>
