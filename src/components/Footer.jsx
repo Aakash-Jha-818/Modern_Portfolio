@@ -1,15 +1,30 @@
-import { Heart } from 'lucide-react'
-import React from 'react'
+import React from "react";
+import { Heart, ArrowUp } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div>
-        <footer className='flex  justify-between    text-white bg-[#070B18]'>
-          <p className='text-[10px] md:text-2xl'>©2026 Aakash Developer. All rights reserved</p>
-          <p className='text-[10px] md:text-2xl'>Made with ❤ by Aakash</p>
-        </footer>
-    </div>
-  )
-}
+    <footer className="bg-[#070B18] text-white px-4 md:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto border-t border-white/8 py-6">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
 
-export default Footer
+          <p className="text-xs md:text-sm text-slate-500">
+            © 2026 Aakash Developer. All rights reserved.
+          </p>
+
+          <div className="flex items-center gap-1.5 text-xs md:text-sm text-slate-500">
+            Made with
+            <Heart
+              size={14}
+              className="text-violet-400 fill-violet-400"
+            />
+            by
+            <span className="text-slate-300 font-medium">Aakash</span>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
